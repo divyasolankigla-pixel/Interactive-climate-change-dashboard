@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Climate Change Dashboard | Global Trends & Visual Analytics</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="brand-wrapper">
+        <div class="brand-icon-box">🌍</div>
+        <div>
+          <h1 class="brand-title">Interactive Climate Change Dashboard</h1>
+          <p class="brand-subtitle">Planetary Climate Trends, Greenhouse Gas Dynamics & Predictive Scenario Modeling</p>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="live-badge">
+          <span class="pulse-dot"></span>
+          Berkeley Earth & IPCC AR6 Aligned
+        </span>
+        <button class="header-btn" onclick="window.print()">🖨️ Export PDF</button>
+        <button class="header-btn" onclick="window.open('/api/status', '_blank')">⚡ REST API</button>
+      </div>
+    </header>
+
+    <!-- KEY INDICATORS KPI BANNER -->
+    <section class="kpi-banner">
+      <!-- 1. Temp Anomaly -->
+      <div class="kpi-card" style="--card-accent: var(--accent-rose)">
+        <div class="kpi-header">
+          <span class="kpi-label">Global Land Temp Anomaly</span>
+          <span class="kpi-icon">🌡️</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiGlobalTemp">+2.04°C</span>
+          <span class="kpi-unit">vs 1850-1900</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-danger">Accelerating</span>
+          <span class="kpi-subtext" id="kpiTempAnomaly">Ocean+Land: +1.31°C</span>
+        </div>
+      </div>
+
+      <!-- 2. CO2 Concentration -->
+      <div class="kpi-card" style="--card-accent: var(--accent-cyan)">
+        <div class="kpi-header">
+          <span class="kpi-label">Atmospheric CO₂</span>
+          <span class="kpi-icon">☁️</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiAtmosphericCO2">425.2 ppm</span>
+          <span class="kpi-unit">Mauna Loa</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-warning">+51.8% vs 280 ppm</span>
+          <span class="kpi-subtext">+2.4 ppm/yr</span>
+        </div>
+      </div>
+
+      <!-- 3. Annual Emissions -->
+      <div class="kpi-card" style="--card-accent: var(--accent-amber)">
+        <div class="kpi-header">
+          <span class="kpi-label">Annual Fossil Emissions</span>
+          <span class="kpi-icon">🏭</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiAnnualEmissions">39.1 Gt</span>
+          <span class="kpi-unit">CO₂/yr</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-danger">Record High</span>
+          <span class="kpi-subtext">Coal 41% • Oil 33%</span>
+        </div>
+      </div>
+
+      <!-- 4. Sea Level Rise -->
+      <div class="kpi-card" style="--card-accent: var(--accent-blue)">
+        <div class="kpi-header">
+          <span class="kpi-label">Global Mean Sea Level</span>
+          <span class="kpi-icon">🌊</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiSeaLevel">+262 mm</span>
+          <span class="kpi-unit">since 1880</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-danger">+3.7 mm/yr</span>
+          <span class="kpi-subtext">Thermal & Ice Melt</span>
+        </div>
+      </div>
+
+      <!-- 5. Arctic Sea Ice -->
+      <div class="kpi-card" style="--card-accent: var(--accent-purple)">
+        <div class="kpi-header">
+          <span class="kpi-label">Arctic Ice Summer Min</span>
+          <span class="kpi-icon">🧊</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" id="kpiArcticIce">4.28 M</span>
+          <span class="kpi-unit">km²</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-danger">-44.2%</span>
+          <span class="kpi-subtext">vs 1980 baseline</span>
+        </div>
+      </div>
+
+      <!-- 6. Carbon Budget Countdown -->
+      <div class="kpi-card" style="--card-accent: var(--accent-emerald)">
+        <div class="kpi-header">
+          <span class="kpi-label">1.5°C Carbon Budget</span>
+          <span class="kpi-icon">⏳</span>
+        </div>
+        <div class="kpi-value-row">
+          <span class="kpi-value" style="color: #ef4444;">~250 Gt</span>
+          <span class="kpi-unit">remaining</span>
+        </div>
+        <div class="kpi-footer">
+          <span class="kpi-badge badge-danger">~5.9 Years Left</span>
+          <span class="kpi-subtext">at 39 Gt/yr rate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="tabs-navigation">
+      <button class="tab-btn active" data-tab="overviewTab">📊 Global Trends & Stripes</button>
+      <button class="tab-btn" data-tab="emissionsTab">🏭 Emissions & Greenhouse Gases</button>
+      <button class="tab-btn" data-tab="comparisonTab">🌐 Regional & Country Explorer</button>
+      <button class="tab-btn" data-tab="mapTab">🗺️ Interactive Climate Map</button>
+      <button class="tab-btn" data-tab="attributionTab">🔍 Human Attribution & Budget</button>
+      <button class="tab-btn" data-tab="simulatorTab">🎛️ Climate Scenario Simulator</button>
+      <button class="tab-btn" data-tab="edaTab">📈 Exploratory Data Analysis (EDA)</button>
+      <button class="tab-btn" data-tab="solutionsTab">🌱 Solutions & Action Plan</button>
+    </nav>
+
+    <!-- TAB 1: OVERVIEW & GLOBAL TRENDS -->
+    <div id="overviewTab" class="tab-content active">
+      
+      <!-- Temperature Timeline -->
+      <div class="chart-card" style="margin-bottom: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>📈 Global Surface Temperature Trajectory (1750 – Present)</h3>
+            <p>Annual land temperature anomalies relative to the 1850–1900 pre-industrial baseline (Berkeley Earth + NASA GISS)</p>
+          </div>
+          <div class="chart-actions">
+            <div class="btn-filter-group">
+              <button class="filter-btn time-filter-btn active" data-range="all">1750 – Present</button>
+              <button class="filter-btn time-filter-btn" data-range="1900">Since 1900</button>
+              <button class="filter-btn time-filter-btn" data-range="1950">Since 1950</button>
+              <button class="filter-btn time-filter-btn" data-range="1980">Since 1980</button>
+            </div>
+          </div>
+        </div>
+        <div class="chart-canvas-container tall">
+          <canvas id="globalTempChartCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Ed Hawkins Warming Stripes -->
+      <div class="chart-card" style="margin-bottom: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>🎨 "Show Your Stripes" — Global Warming Barcode (1850 – 2024)</h3>
+            <p>Visualizing each year as a single stripe colored from blue (cooler than mid-century) to deep crimson (warmer than mid-century).</p>
+          </div>
+          <span class="live-badge">Hover over any stripe to inspect year & anomaly</span>
+        </div>
+        <div id="warmingStripesContainer" class="stripes-container"></div>
+        <div class="stripes-labels">
+          <span>1850 (Cooler / Pre-Industrial)</span>
+          <span>1951–1980 Baseline</span>
+          <span style="color:#ef4444; font-weight:bold;">2024 (Record Heat: +2.04°C Land)</span>
+        </div>
+      </div>
+
+      <!-- Seasonal & Ocean Breakdown -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🗓️ Monthly Seasonal Cycle Shifts</h3>
+              <p>Comparing baseline monthly temperatures (1951–1980) vs modern decade (2000–2015)</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="monthlyClimatologyCanvas"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>💡 Key Climatological Findings</h3>
+              <p>Critical scientific takeaways from the 270-year observational record</p>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; display: flex; flex-direction: column; gap: 0.85rem;">
+            <div style="background: rgba(239, 68, 68, 0.1); padding: 0.85rem; border-left: 3px solid #ef4444; border-radius: 4px;">
+              <strong style="color: #f87171;">Unprecedented Warming Acceleration:</strong>
+              The warming rate over the last 40 years (+0.25°C/decade) is over <strong>6.5 times faster</strong> than the early industrial rate (+0.038°C/decade).
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.1); padding: 0.85rem; border-left: 3px solid #38bdf8; border-radius: 4px;">
+              <strong style="color: #38bdf8;">Land Heats Faster than Oceans:</strong>
+              Global land surface temperature has already warmed by <strong>+2.04°C</strong> above pre-industrial levels, while ocean surface has warmed by ~+0.9°C due to water's massive thermal capacity.
+            </div>
+            <div style="background: rgba(245, 158, 11, 0.1); padding: 0.85rem; border-left: 3px solid #f59e0b; border-radius: 4px;">
+              <strong style="color: #fbbf24;">Shrinking Observational Uncertainty:</strong>
+              Global measurement uncertainty dropped from ±3.57°C in 1750 down to ±0.03°C today due to modern satellites, weather stations, and Argo ocean buoys.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: EMISSIONS & GREENHOUSE GASES -->
+    <div id="emissionsTab" class="tab-content">
+      <!-- Stacked Emissions Area -->
+      <div class="chart-card" style="margin-bottom: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>🏭 Global Fossil CO₂ Emissions by Fuel Type (1900 – 2024)</h3>
+            <p>Annual emissions in Gigatonnes of CO₂ per year (Global Carbon Project 2024)</p>
+          </div>
+          <span class="live-badge" style="color: #f59e0b;">Total 2024: 39.1 Gt CO₂</span>
+        </div>
+        <div class="chart-canvas-container tall">
+          <canvas id="emissionsStackedCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Top Emitters: Total vs Per Capita -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🏆 Top 10 Annual Emitting Nations</h3>
+              <p>Total annual territorial fossil CO₂ emissions (Megatonnes CO₂/yr)</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="countryEmissionsCanvas"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>👤 Per Capita Emissions (Tonnes CO₂ / Person)</h3>
+              <p>Highlighting the carbon intensity per citizen across leading economies</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="perCapitaCanvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- GHG Breakdown: By Gas & By Sector -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🧪 Greenhouse Gas Composition (100-Year GWP)</h3>
+              <p>Relative radiative forcing contribution of each major greenhouse gas (IPCC AR6)</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="ghgByGasCanvas"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>⚡ Global Greenhouse Gas Emissions by Sector</h3>
+              <p>Economic sectors driving anthropogenic warming</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="ghgBySectorCanvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: REGIONAL & COUNTRY EXPLORER -->
+    <div id="comparisonTab" class="tab-content">
+      <div class="selector-panel">
+        <label style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">COMPARE COUNTRIES:</label>
+        <select id="countryDropdownSelect" class="select-control"></select>
+        <div style="display:flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="header-btn preset-btn" data-preset="emitters">Top Emitters</button>
+          <button class="header-btn preset-btn" data-preset="fastest">Fastest Warming</button>
+          <button class="header-btn preset-btn" data-preset="islands">Island Nations</button>
+          <button class="header-btn preset-btn" data-preset="continents">4 Continents</button>
+        </div>
+        <div id="countryChipsContainer" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-left: auto;"></div>
+      </div>
+
+      <!-- Comparative Line Chart -->
+      <div class="chart-card" style="margin-bottom: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>🌐 Multi-Country Temperature Anomaly Comparison (1880 – 2013)</h3>
+            <p>Direct comparison of historical warming anomalies across selected nations</p>
+          </div>
+        </div>
+        <div class="chart-canvas-container tall">
+          <canvas id="countryComparisonCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Comparison Metrics Table -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>📊 Country Climate Statistics</h3>
+            <p>Pre-industrial baseline temperatures, contemporary temperatures, and overall warming delta</p>
+          </div>
+        </div>
+        <div class="data-table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Country / Territory</th>
+                <th>Pre-1900 Baseline Temp</th>
+                <th>Recent Decade Mean</th>
+                <th>Warming Delta (°C)</th>
+                <th>Observational Span</th>
+              </tr>
+            </thead>
+            <tbody id="countryTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: INTERACTIVE CLIMATE MAP -->
+    <div id="mapTab" class="tab-content">
+      <div class="selector-panel">
+        <label style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">FILTER STATIONS:</label>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="filter-btn map-filter-btn active" data-zone="all">All 100 Major Cities</button>
+          <button class="filter-btn map-filter-btn" data-zone="polar">High Latitudes (>50°)</button>
+          <button class="filter-btn map-filter-btn" data-zone="temperate">Temperate (23.5°–50°)</button>
+          <button class="filter-btn map-filter-btn" data-zone="tropical">Tropical (0°–23.5°)</button>
+          <button class="filter-btn map-filter-btn" data-zone="high_warming">Warming &gt; +1.4°C</button>
+          <button class="header-btn" onclick="ClimateMap.resetZoom()">🔍 Reset Map</button>
+        </div>
+        <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: auto;">Scroll wheel zooms • Click any station for historical records</span>
+      </div>
+
+      <div class="chart-card" style="margin-bottom: 1.5rem; overflow: hidden; padding: 0.75rem;">
+        <canvas id="climateMapCanvas"></canvas>
+      </div>
+
+      <!-- Selected City Detail Modal / Panel -->
+      <div id="cityDetailCard" class="chart-card" style="display: none; margin-bottom: 1.5rem; border-color: var(--accent-cyan);">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3 id="modalCityName" style="color: var(--accent-cyan);">Station Record</h3>
+            <p id="modalCityCoords">Coordinates</p>
+          </div>
+          <button id="closeCityModalBtn" class="header-btn">✕ Close</button>
+        </div>
+        <div class="grid-3" style="margin-bottom: 1rem;">
+          <div class="kpi-card">
+            <span class="kpi-label">Historical Baseline</span>
+            <div class="kpi-value" id="modalBaselineTemp">--</div>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Recent Decade Mean</span>
+            <div class="kpi-value" id="modalRecentTemp">--</div>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Station Warming Delta</span>
+            <div class="kpi-value" id="modalWarmingDelta" style="color: #ef4444;">--</div>
+          </div>
+        </div>
+        <div class="chart-canvas-container small">
+          <canvas id="cityHistoryCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: ATTRIBUTION & CARBON BUDGET -->
+    <div id="attributionTab" class="tab-content">
+      <!-- Live Carbon Budget Clock -->
+      <div class="carbon-clock-box">
+        <div class="clock-title">⏳ Global Carbon Budget Clock — Paris 1.5°C Guardrail</div>
+        <div id="carbonClockCounter" class="clock-counter">Loading Budget...</div>
+        <div class="budget-progress-track">
+          <div class="budget-progress-fill"></div>
+        </div>
+        <p class="clock-subtext">
+          Estimated remaining emissions budget for a 50% probability of limiting global warming to 1.5°C.
+          At the current burn rate of ~1,238 tonnes of CO₂/second, the remaining 1.5°C budget runs out in:
+          <strong id="carbonTimeLeft" style="color: #fca5a5; font-size: 1.1rem; display: block; margin-top: 4px;">--</strong>
+        </p>
+      </div>
+
+      <!-- CO2 vs Temp Scatter & Correlation -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🔍 Direct Coupling: Atmospheric CO₂ vs Temperature</h3>
+              <p>Scatter plot & linear regression showing correlation (R² = 0.733, p &lt; 0.001)</p>
+            </div>
+          </div>
+          <div class="chart-canvas-container">
+            <canvas id="co2VsTempScatterCanvas"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🔬 Statistical Attribution Matrix</h3>
+              <p>Correlation coefficients linking human drivers to climate response</p>
+            </div>
+          </div>
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Driver (Variable 1)</th>
+                  <th>Climate Response (Variable 2)</th>
+                  <th>Pearson r</th>
+                  <th>R² Coupling</th>
+                  <th>Physical Meaning</th>
+                </tr>
+              </thead>
+              <tbody id="correlationTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: CLIMATE SCENARIO SIMULATOR -->
+    <div id="simulatorTab" class="tab-content">
+      <div class="grid-1-2">
+        <!-- Controls Column -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>🎛️ Simulation Parameters</h3>
+              <p>Adjust policy levers or choose IPCC AR6 scenarios</p>
+            </div>
+          </div>
+
+          <!-- Presets -->
+          <div style="margin-bottom: 1.25rem;">
+            <label style="font-size: 0.8rem; color: var(--text-secondary); font-weight: 600; display: block; margin-bottom: 0.5rem;">IPCC AR6 SCENARIO PRESETS:</label>
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <button class="header-btn sim-preset-btn active" data-scenario="SSP1-1.9" style="text-align: left;">🟢 SSP1-1.9 (Paris 1.5°C Target)</button>
+              <button class="header-btn sim-preset-btn" data-scenario="SSP1-2.6" style="text-align: left;">🔵 SSP1-2.6 (Well Below 2.0°C)</button>
+              <button class="header-btn sim-preset-btn" data-scenario="SSP2-4.5" style="text-align: left;">🟡 SSP2-4.5 (Current Policies / Middle Road)</button>
+              <button class="header-btn sim-preset-btn" data-scenario="SSP3-7.0" style="text-align: left;">🟠 SSP3-7.0 (Regional Rivalry)</button>
+              <button class="header-btn sim-preset-btn" data-scenario="SSP5-8.5" style="text-align: left;">🔴 SSP5-8.5 (Fossil-Fueled Growth)</button>
+            </div>
+          </div>
+
+          <!-- Custom Sliders -->
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Global Peak Emissions Year</span>
+              <span id="simPeakYearVal" class="slider-val-badge">2025</span>
+            </div>
+            <input id="simPeakYear" type="range" class="custom-range" min="2024" max="2055" value="2025">
+          </div>
+
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Annual Decarbonization Rate</span>
+              <span id="simReductionRateVal" class="slider-val-badge">7.5%/yr</span>
+            </div>
+            <input id="simReductionRate" type="range" class="custom-range" min="0" max="10" step="0.5" value="7.5">
+          </div>
+
+          <div class="slider-control-group">
+            <div class="slider-label-row">
+              <span class="slider-name">Climate Sensitivity (ECS)</span>
+            </div>
+            <select id="simSensitivity" class="select-control" style="width: 100%;">
+              <option value="0.75">Low Sensitivity (2.2°C per CO₂ doubling)</option>
+              <option value="1.0" selected>Best Estimate (3.0°C per CO₂ doubling)</option>
+              <option value="1.35">High Sensitivity (4.0°C per CO₂ doubling)</option>
+            </select>
+          </div>
+
+          <!-- Result Gauges -->
+          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 1rem; margin-top: 1rem;">
+            <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.5rem;">Projected 2100 Outcome</div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem;">
+              <span style="font-size: 0.9rem;">Warming Anomaly:</span>
+              <strong id="simWarming2100" style="font-size: 1.4rem; color: #ef4444;">+1.40°C</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.6rem;">
+              <span style="font-size: 0.9rem;">Sea Level Rise:</span>
+              <strong id="simSeaLevel2100" style="font-size: 1.2rem; color: #38bdf8;">+50 cm</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.6rem;">
+              <span style="font-size: 0.9rem;">Cum. CO₂ (2024-2100):</span>
+              <strong id="simCumCO2" style="font-size: 1.1rem; color: #f59e0b;">350 Gt</strong>
+            </div>
+            <div id="simParisBadge" class="kpi-badge badge-success" style="width: 100%; justify-content: center; padding: 0.4rem;">✓ Paris 1.5°C Achieved</div>
+          </div>
+        </div>
+
+        <!-- Simulation Charts Column -->
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-box">
+                <h3>🌡️ 2100 Global Temperature Anomaly Trajectory</h3>
+                <p>Dynamic projection based on cumulative carbon emissions</p>
+              </div>
+            </div>
+            <div class="chart-canvas-container">
+              <canvas id="simChartCanvas"></canvas>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <div class="chart-title-box">
+                <h3>📉 Annual CO₂ Emissions Path (2024 – 2100)</h3>
+                <p>Required global decarbonization curve in Gt CO₂ / year</p>
+              </div>
+            </div>
+            <div class="chart-canvas-container">
+              <canvas id="simEmissionsCanvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 7: EXPLORATORY DATA ANALYSIS (EDA) HUB -->
+    <div id="edaTab" class="tab-content">
+      <!-- Epoch Summary Table -->
+      <div class="chart-card" style="margin-bottom: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>📊 Descriptive Statistics Across Historical Epochs</h3>
+            <p>Mean, variance, anomaly, uncertainty, and sample distribution across major climate eras</p>
+          </div>
+        </div>
+        <div class="data-table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Historical Epoch</th>
+                <th>Span</th>
+                <th>Mean Land Temp</th>
+                <th>Std Dev</th>
+                <th>Anomaly vs 1850</th>
+                <th>Mean Uncertainty</th>
+                <th>Sample Years</th>
+              </tr>
+            </thead>
+            <tbody id="edaEpochTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Warming Rates -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>⚡ Warming Acceleration Analysis</h3>
+              <p>Linear warming rate slopes (°C per decade) across epochs</p>
+            </div>
+          </div>
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Epoch Period</th>
+                  <th>Rate (°C / Decade)</th>
+                  <th>Total Warming</th>
+                  <th>Acceleration vs 1850</th>
+                </tr>
+              </thead>
+              <tbody id="edaWarmingRateBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Polar Amplification -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title-box">
+              <h3>❄️ Polar Amplification Gradient</h3>
+              <p>Demonstrating how high-latitude regions warm significantly faster than the tropics</p>
+            </div>
+          </div>
+          <div class="data-table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Latitude Zone</th>
+                  <th>Stations</th>
+                  <th>Mean Warming</th>
+                  <th>Peak Warming</th>
+                </tr>
+              </thead>
+              <tbody id="edaPolarBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uncertainty Chart -->
+      <div class="chart-card" style="margin-top: 1.5rem;">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>📉 Evolution of Observational Uncertainty (1750 – Present)</h3>
+            <p>How scientific instrumentation precision improved from early thermometers (±3.5°C) to modern satellites (±0.04°C)</p>
+          </div>
+        </div>
+        <div class="chart-canvas-container">
+          <canvas id="edaUncertaintyCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 8: SOLUTIONS & ACTION PLAN -->
+    <div id="solutionsTab" class="tab-content">
+      <div class="grid-3" style="margin-bottom: 1.5rem;">
+        
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">⚡</div>
+            <div>
+              <div class="solution-title">Clean Energy Transition</div>
+              <div class="solution-impact">Project Drawdown: -430 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            Phasing out coal, replacing fossil gas with solar photovoltaics, onshore/offshore wind, grid storage batteries, and clean nuclear baseload power.
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">🚗</div>
+            <div>
+              <div class="solution-title">Transport Electrification</div>
+              <div class="solution-impact">Impact: -120 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            100% zero-emission passenger vehicles, electric public transit fleets, high-speed rail, green hydrogen for heavy transport, and sustainable aviation fuels.
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">🌲</div>
+            <div>
+              <div class="solution-title">Reforestation & Land Sinks</div>
+              <div class="solution-impact">Impact: -215 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            Protecting tropical rainforests, restoring degraded peatlands and coastal mangrove blue carbon sinks, and deploying regenerative agricultural soil management.
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">🥗</div>
+            <div>
+              <div class="solution-title">Food Systems & Waste</div>
+              <div class="solution-impact">Impact: -150 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            Halving food loss and waste across supply chains, adopting plant-rich diets, precision agriculture fertilizers, and enteric methane inhibitors for livestock.
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">🏭</div>
+            <div>
+              <div class="solution-title">Industrial Decarbonization</div>
+              <div class="solution-impact">Impact: -95 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            Green hydrogen direct-reduced iron for green steel, carbon-cured cements, circular economy recycling, and capturing high-potency fluorinated gases.
+          </p>
+        </div>
+
+        <div class="solution-card">
+          <div class="solution-header">
+            <div class="solution-icon">🏠</div>
+            <div>
+              <div class="solution-title">Building Efficiency</div>
+              <div class="solution-impact">Impact: -80 Gt CO₂ eq</div>
+            </div>
+          </div>
+          <p class="solution-body">
+            Universal heat pump retrofits, passive house architectural standards, LED lighting, smart thermostats, and eliminating fossil methane gas connections.
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Framework -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title-box">
+            <h3>🎯 High-Impact Action Framework for Individuals, Organizations & Cities</h3>
+            <p>Evidence-based carbon reduction strategies ranked by annual impact</p>
+          </div>
+        </div>
+        <div class="data-table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Strategic Action</th>
+                <th>Direct Impact</th>
+                <th>Systemic Leverage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Policy & Nation</strong></td>
+                <td>Carbon pricing & border adjustment tariffs</td>
+                <td>Economy-wide decarbonization</td>
+                <td>Shifts global capital flows toward zero-carbon tech</td>
+              </tr>
+              <tr>
+                <td><strong>City & Municipal</strong></td>
+                <td>Zoning for 15-minute walkable cities & bike infrastructure</td>
+                <td>-25% urban transport emissions</td>
+                <td>Healthier air, reduced traffic congestion</td>
+              </tr>
+              <tr>
+                <td><strong>Enterprise</strong></td>
+                <td>Scope 1, 2, and 3 science-based Net Zero targets</td>
+                <td>Supply chain decarbonization</td>
+                <td>Demands certified green steel, cement & electricity</td>
+              </tr>
+              <tr>
+                <td><strong>Individual</strong></td>
+                <td>Switch to home heat pump & electric vehicle</td>
+                <td>-4.5 tonnes CO₂ / yr per household</td>
+                <td>Eliminates residential fossil fuel combustion</td>
+              </tr>
+              <tr>
+                <td><strong>Individual</strong></td>
+                <td>Plant-forward diet & eliminating food waste</td>
+                <td>-1.2 tonnes CO₂ / yr per person</td>
+                <td>Reduces deforestation and agricultural methane</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+      <div>
+        <strong>Interactive Climate Change Dashboard</strong> &copy; 2026. Data sources: Berkeley Earth Surface Temperature, NOAA GML, NASA GISS, Global Carbon Project, IPCC AR6.
+      </div>
+      <div class="footer-links">
+        <a href="/api/status" target="_blank">API Docs</a>
+        <a href="#overviewTab" onclick="document.querySelector('[data-tab=overviewTab]').click()">Overview</a>
+        <a href="#simulatorTab" onclick="document.querySelector('[data-tab=simulatorTab]').click()">Simulator</a>
+        <a href="#edaTab" onclick="document.querySelector('[data-tab=edaTab]').click()">EDA Hub</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="static/js/charts.js"></script>
+  <script src="static/js/map.js"></script>
+  <script src="static/js/simulator.js"></script>
+  <script src="static/js/app.js"></script>
+
+</body>
+</html>

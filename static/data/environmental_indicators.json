@@ -1,0 +1,452 @@
+{
+  "sea_level_timeline": [
+    {
+      "year": 1880,
+      "sea_level_mm": 0.0,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1890,
+      "sea_level_mm": 8.2,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1900,
+      "sea_level_mm": 17.5,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1910,
+      "sea_level_mm": 28.1,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1920,
+      "sea_level_mm": 42.0,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1930,
+      "sea_level_mm": 57.3,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1940,
+      "sea_level_mm": 75.8,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1950,
+      "sea_level_mm": 92.4,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1960,
+      "sea_level_mm": 108.6,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1970,
+      "sea_level_mm": 124.9,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1980,
+      "sea_level_mm": 142.1,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1990,
+      "sea_level_mm": 161.4,
+      "source": "Tide gauge"
+    },
+    {
+      "year": 1995,
+      "sea_level_mm": 174.2,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2000,
+      "sea_level_mm": 188.0,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2005,
+      "sea_level_mm": 202.5,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2010,
+      "sea_level_mm": 216.8,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2015,
+      "sea_level_mm": 232.1,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2020,
+      "sea_level_mm": 247.9,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2023,
+      "sea_level_mm": 258.4,
+      "source": "Satellite altimetry"
+    },
+    {
+      "year": 2024,
+      "sea_level_mm": 262.1,
+      "source": "Satellite altimetry"
+    }
+  ],
+  "arctic_ice_timeline": [
+    {
+      "year": 1979,
+      "extent_m_km2": 7.05
+    },
+    {
+      "year": 1980,
+      "extent_m_km2": 7.67
+    },
+    {
+      "year": 1985,
+      "extent_m_km2": 6.7
+    },
+    {
+      "year": 1990,
+      "extent_m_km2": 6.14
+    },
+    {
+      "year": 1995,
+      "extent_m_km2": 6.08
+    },
+    {
+      "year": 2000,
+      "extent_m_km2": 6.25
+    },
+    {
+      "year": 2005,
+      "extent_m_km2": 5.5
+    },
+    {
+      "year": 2007,
+      "extent_m_km2": 4.27
+    },
+    {
+      "year": 2010,
+      "extent_m_km2": 4.87
+    },
+    {
+      "year": 2012,
+      "extent_m_km2": 3.57
+    },
+    {
+      "year": 2015,
+      "extent_m_km2": 4.62
+    },
+    {
+      "year": 2018,
+      "extent_m_km2": 4.71
+    },
+    {
+      "year": 2020,
+      "extent_m_km2": 3.92
+    },
+    {
+      "year": 2021,
+      "extent_m_km2": 4.92
+    },
+    {
+      "year": 2022,
+      "extent_m_km2": 4.87
+    },
+    {
+      "year": 2023,
+      "extent_m_km2": 4.37
+    },
+    {
+      "year": 2024,
+      "extent_m_km2": 4.28
+    }
+  ],
+  "ipcc_scenarios": {
+    "SSP1-1.9": {
+      "name": "Very Low (1.5\u00b0C Paris Ambition)",
+      "description": "Aggressive decarbonization, net-zero CO2 around 2050. Global warming peaks around 1.6\u00b0C and declines to ~1.4\u00b0C by 2100.",
+      "color": "#10b981",
+      "trajectory": [
+        {
+          "year": 2020,
+          "temp_anomaly": 1.15,
+          "sea_level_rise_cm": 25
+        },
+        {
+          "year": 2030,
+          "temp_anomaly": 1.4,
+          "sea_level_rise_cm": 30
+        },
+        {
+          "year": 2040,
+          "temp_anomaly": 1.55,
+          "sea_level_rise_cm": 35
+        },
+        {
+          "year": 2050,
+          "temp_anomaly": 1.6,
+          "sea_level_rise_cm": 38
+        },
+        {
+          "year": 2060,
+          "temp_anomaly": 1.55,
+          "sea_level_rise_cm": 41
+        },
+        {
+          "year": 2070,
+          "temp_anomaly": 1.5,
+          "sea_level_rise_cm": 44
+        },
+        {
+          "year": 2080,
+          "temp_anomaly": 1.45,
+          "sea_level_rise_cm": 46
+        },
+        {
+          "year": 2090,
+          "temp_anomaly": 1.42,
+          "sea_level_rise_cm": 48
+        },
+        {
+          "year": 2100,
+          "temp_anomaly": 1.4,
+          "sea_level_rise_cm": 50
+        }
+      ]
+    },
+    "SSP1-2.6": {
+      "name": "Low (Below 2.0\u00b0C Target)",
+      "description": "Substantial emissions cuts, net-zero CO2 around 2075. Warming stabilizes at ~1.8\u00b0C by 2100.",
+      "color": "#3b82f6",
+      "trajectory": [
+        {
+          "year": 2020,
+          "temp_anomaly": 1.15,
+          "sea_level_rise_cm": 25
+        },
+        {
+          "year": 2030,
+          "temp_anomaly": 1.45,
+          "sea_level_rise_cm": 31
+        },
+        {
+          "year": 2040,
+          "temp_anomaly": 1.65,
+          "sea_level_rise_cm": 37
+        },
+        {
+          "year": 2050,
+          "temp_anomaly": 1.75,
+          "sea_level_rise_cm": 42
+        },
+        {
+          "year": 2060,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 46
+        },
+        {
+          "year": 2070,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 50
+        },
+        {
+          "year": 2080,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 53
+        },
+        {
+          "year": 2090,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 55
+        },
+        {
+          "year": 2100,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 58
+        }
+      ]
+    },
+    "SSP2-4.5": {
+      "name": "Intermediate (Current Policies / Middle Road)",
+      "description": "Emissions remain near current levels until 2050 before gradually declining. Warming reaches ~2.7\u00b0C by 2100.",
+      "color": "#f59e0b",
+      "trajectory": [
+        {
+          "year": 2020,
+          "temp_anomaly": 1.15,
+          "sea_level_rise_cm": 25
+        },
+        {
+          "year": 2030,
+          "temp_anomaly": 1.5,
+          "sea_level_rise_cm": 32
+        },
+        {
+          "year": 2040,
+          "temp_anomaly": 1.8,
+          "sea_level_rise_cm": 40
+        },
+        {
+          "year": 2050,
+          "temp_anomaly": 2.05,
+          "sea_level_rise_cm": 48
+        },
+        {
+          "year": 2060,
+          "temp_anomaly": 2.25,
+          "sea_level_rise_cm": 54
+        },
+        {
+          "year": 2070,
+          "temp_anomaly": 2.45,
+          "sea_level_rise_cm": 61
+        },
+        {
+          "year": 2080,
+          "temp_anomaly": 2.58,
+          "sea_level_rise_cm": 67
+        },
+        {
+          "year": 2090,
+          "temp_anomaly": 2.65,
+          "sea_level_rise_cm": 72
+        },
+        {
+          "year": 2100,
+          "temp_anomaly": 2.7,
+          "sea_level_rise_cm": 78
+        }
+      ]
+    },
+    "SSP3-7.0": {
+      "name": "High (Regional Rivalry / Fragmented)",
+      "description": "Nationalism, sluggish economic growth, weak climate policies. Warming reaches ~3.6\u00b0C by 2100 with extreme weather.",
+      "color": "#ea580c",
+      "trajectory": [
+        {
+          "year": 2020,
+          "temp_anomaly": 1.15,
+          "sea_level_rise_cm": 25
+        },
+        {
+          "year": 2030,
+          "temp_anomaly": 1.55,
+          "sea_level_rise_cm": 33
+        },
+        {
+          "year": 2040,
+          "temp_anomaly": 1.95,
+          "sea_level_rise_cm": 42
+        },
+        {
+          "year": 2050,
+          "temp_anomaly": 2.35,
+          "sea_level_rise_cm": 52
+        },
+        {
+          "year": 2060,
+          "temp_anomaly": 2.75,
+          "sea_level_rise_cm": 63
+        },
+        {
+          "year": 2070,
+          "temp_anomaly": 3.1,
+          "sea_level_rise_cm": 73
+        },
+        {
+          "year": 2080,
+          "temp_anomaly": 3.35,
+          "sea_level_rise_cm": 83
+        },
+        {
+          "year": 2090,
+          "temp_anomaly": 3.52,
+          "sea_level_rise_cm": 91
+        },
+        {
+          "year": 2100,
+          "temp_anomaly": 3.65,
+          "sea_level_rise_cm": 100
+        }
+      ]
+    },
+    "SSP5-8.5": {
+      "name": "Very High (Fossil-Fueled Growth / Worst Case)",
+      "description": "Intensive fossil fuel consumption triples emissions. Warming exceeds ~4.4\u00b0C by 2100, causing catastrophic tipping points.",
+      "color": "#dc2626",
+      "trajectory": [
+        {
+          "year": 2020,
+          "temp_anomaly": 1.15,
+          "sea_level_rise_cm": 25
+        },
+        {
+          "year": 2030,
+          "temp_anomaly": 1.65,
+          "sea_level_rise_cm": 34
+        },
+        {
+          "year": 2040,
+          "temp_anomaly": 2.15,
+          "sea_level_rise_cm": 45
+        },
+        {
+          "year": 2050,
+          "temp_anomaly": 2.7,
+          "sea_level_rise_cm": 58
+        },
+        {
+          "year": 2060,
+          "temp_anomaly": 3.25,
+          "sea_level_rise_cm": 72
+        },
+        {
+          "year": 2070,
+          "temp_anomaly": 3.75,
+          "sea_level_rise_cm": 86
+        },
+        {
+          "year": 2080,
+          "temp_anomaly": 4.1,
+          "sea_level_rise_cm": 98
+        },
+        {
+          "year": 2090,
+          "temp_anomaly": 4.3,
+          "sea_level_rise_cm": 110
+        },
+        {
+          "year": 2100,
+          "temp_anomaly": 4.45,
+          "sea_level_rise_cm": 122
+        }
+      ]
+    }
+  },
+  "carbon_budget": {
+    "target_1_5c": {
+      "budget_remaining_gt": 250,
+      "years_left_at_current_rate": 6.2,
+      "deadline_year": 2030,
+      "probability": "50%"
+    },
+    "target_2_0c": {
+      "budget_remaining_gt": 950,
+      "years_left_at_current_rate": 24.3,
+      "deadline_year": 2048,
+      "probability": "67%"
+    },
+    "annual_emission_rate_gt": 39.0,
+    "per_second_emission_tonnes": 1238
+  }
+}

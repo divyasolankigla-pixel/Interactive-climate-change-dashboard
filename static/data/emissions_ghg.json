@@ -1,0 +1,2720 @@
+{
+  "co2_ppm_historical": [
+    [
+      1750,
+      277.0
+    ],
+    [
+      1760,
+      277.3
+    ],
+    [
+      1770,
+      277.8
+    ],
+    [
+      1780,
+      278.4
+    ],
+    [
+      1790,
+      279.1
+    ],
+    [
+      1800,
+      282.9
+    ],
+    [
+      1810,
+      283.4
+    ],
+    [
+      1820,
+      283.8
+    ],
+    [
+      1830,
+      284.4
+    ],
+    [
+      1840,
+      285.2
+    ],
+    [
+      1850,
+      285.8
+    ],
+    [
+      1860,
+      287.0
+    ],
+    [
+      1870,
+      289.0
+    ],
+    [
+      1880,
+      290.8
+    ],
+    [
+      1890,
+      294.4
+    ],
+    [
+      1900,
+      296.0
+    ],
+    [
+      1910,
+      300.1
+    ],
+    [
+      1920,
+      303.4
+    ],
+    [
+      1930,
+      307.0
+    ],
+    [
+      1940,
+      310.0
+    ],
+    [
+      1950,
+      311.3
+    ],
+    [
+      1955,
+      313.5
+    ],
+    [
+      1958,
+      315.2
+    ],
+    [
+      1960,
+      316.9
+    ],
+    [
+      1965,
+      320.0
+    ],
+    [
+      1970,
+      325.7
+    ],
+    [
+      1975,
+      331.1
+    ],
+    [
+      1980,
+      338.8
+    ],
+    [
+      1985,
+      346.1
+    ],
+    [
+      1990,
+      354.4
+    ],
+    [
+      1995,
+      360.8
+    ],
+    [
+      2000,
+      369.5
+    ],
+    [
+      2005,
+      379.8
+    ],
+    [
+      2010,
+      389.9
+    ],
+    [
+      2015,
+      400.8
+    ],
+    [
+      2018,
+      408.5
+    ],
+    [
+      2020,
+      414.2
+    ],
+    [
+      2021,
+      416.5
+    ],
+    [
+      2022,
+      418.6
+    ],
+    [
+      2023,
+      421.1
+    ],
+    [
+      2024,
+      425.2
+    ]
+  ],
+  "emissions_timeline": [
+    {
+      "year": 1800,
+      "coal": 0.03,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.03,
+      "co2_ppm": 282.9
+    },
+    {
+      "year": 1801,
+      "coal": 0.033,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.033,
+      "co2_ppm": 282.95
+    },
+    {
+      "year": 1802,
+      "coal": 0.037,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.037,
+      "co2_ppm": 283.0
+    },
+    {
+      "year": 1803,
+      "coal": 0.04,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.04,
+      "co2_ppm": 283.05
+    },
+    {
+      "year": 1804,
+      "coal": 0.044,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.044,
+      "co2_ppm": 283.1
+    },
+    {
+      "year": 1805,
+      "coal": 0.047,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.047,
+      "co2_ppm": 283.15
+    },
+    {
+      "year": 1806,
+      "coal": 0.05,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.05,
+      "co2_ppm": 283.2
+    },
+    {
+      "year": 1807,
+      "coal": 0.054,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.054,
+      "co2_ppm": 283.25
+    },
+    {
+      "year": 1808,
+      "coal": 0.057,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.057,
+      "co2_ppm": 283.3
+    },
+    {
+      "year": 1809,
+      "coal": 0.061,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.061,
+      "co2_ppm": 283.35
+    },
+    {
+      "year": 1810,
+      "coal": 0.064,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.064,
+      "co2_ppm": 283.4
+    },
+    {
+      "year": 1811,
+      "coal": 0.067,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.067,
+      "co2_ppm": 283.44
+    },
+    {
+      "year": 1812,
+      "coal": 0.071,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.071,
+      "co2_ppm": 283.48
+    },
+    {
+      "year": 1813,
+      "coal": 0.074,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.074,
+      "co2_ppm": 283.52
+    },
+    {
+      "year": 1814,
+      "coal": 0.078,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.078,
+      "co2_ppm": 283.56
+    },
+    {
+      "year": 1815,
+      "coal": 0.081,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.081,
+      "co2_ppm": 283.6
+    },
+    {
+      "year": 1816,
+      "coal": 0.084,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.084,
+      "co2_ppm": 283.64
+    },
+    {
+      "year": 1817,
+      "coal": 0.088,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.088,
+      "co2_ppm": 283.68
+    },
+    {
+      "year": 1818,
+      "coal": 0.091,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.091,
+      "co2_ppm": 283.72
+    },
+    {
+      "year": 1819,
+      "coal": 0.095,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.095,
+      "co2_ppm": 283.76
+    },
+    {
+      "year": 1820,
+      "coal": 0.098,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.098,
+      "co2_ppm": 283.8
+    },
+    {
+      "year": 1821,
+      "coal": 0.101,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.101,
+      "co2_ppm": 283.86
+    },
+    {
+      "year": 1822,
+      "coal": 0.105,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.105,
+      "co2_ppm": 283.92
+    },
+    {
+      "year": 1823,
+      "coal": 0.108,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.108,
+      "co2_ppm": 283.98
+    },
+    {
+      "year": 1824,
+      "coal": 0.112,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.112,
+      "co2_ppm": 284.04
+    },
+    {
+      "year": 1825,
+      "coal": 0.115,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.115,
+      "co2_ppm": 284.1
+    },
+    {
+      "year": 1826,
+      "coal": 0.118,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.118,
+      "co2_ppm": 284.16
+    },
+    {
+      "year": 1827,
+      "coal": 0.122,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.122,
+      "co2_ppm": 284.22
+    },
+    {
+      "year": 1828,
+      "coal": 0.125,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.125,
+      "co2_ppm": 284.28
+    },
+    {
+      "year": 1829,
+      "coal": 0.129,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.129,
+      "co2_ppm": 284.34
+    },
+    {
+      "year": 1830,
+      "coal": 0.132,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.132,
+      "co2_ppm": 284.4
+    },
+    {
+      "year": 1831,
+      "coal": 0.135,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.135,
+      "co2_ppm": 284.48
+    },
+    {
+      "year": 1832,
+      "coal": 0.139,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.139,
+      "co2_ppm": 284.56
+    },
+    {
+      "year": 1833,
+      "coal": 0.142,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.142,
+      "co2_ppm": 284.64
+    },
+    {
+      "year": 1834,
+      "coal": 0.146,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.146,
+      "co2_ppm": 284.72
+    },
+    {
+      "year": 1835,
+      "coal": 0.149,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.149,
+      "co2_ppm": 284.8
+    },
+    {
+      "year": 1836,
+      "coal": 0.152,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.152,
+      "co2_ppm": 284.88
+    },
+    {
+      "year": 1837,
+      "coal": 0.156,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.156,
+      "co2_ppm": 284.96
+    },
+    {
+      "year": 1838,
+      "coal": 0.159,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.159,
+      "co2_ppm": 285.04
+    },
+    {
+      "year": 1839,
+      "coal": 0.163,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.163,
+      "co2_ppm": 285.12
+    },
+    {
+      "year": 1840,
+      "coal": 0.166,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.166,
+      "co2_ppm": 285.2
+    },
+    {
+      "year": 1841,
+      "coal": 0.169,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.169,
+      "co2_ppm": 285.26
+    },
+    {
+      "year": 1842,
+      "coal": 0.173,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.173,
+      "co2_ppm": 285.32
+    },
+    {
+      "year": 1843,
+      "coal": 0.176,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.176,
+      "co2_ppm": 285.38
+    },
+    {
+      "year": 1844,
+      "coal": 0.18,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.18,
+      "co2_ppm": 285.44
+    },
+    {
+      "year": 1845,
+      "coal": 0.183,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.183,
+      "co2_ppm": 285.5
+    },
+    {
+      "year": 1846,
+      "coal": 0.186,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.186,
+      "co2_ppm": 285.56
+    },
+    {
+      "year": 1847,
+      "coal": 0.19,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.19,
+      "co2_ppm": 285.62
+    },
+    {
+      "year": 1848,
+      "coal": 0.193,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.193,
+      "co2_ppm": 285.68
+    },
+    {
+      "year": 1849,
+      "coal": 0.197,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.197,
+      "co2_ppm": 285.74
+    },
+    {
+      "year": 1850,
+      "coal": 0.2,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.2,
+      "co2_ppm": 285.8
+    },
+    {
+      "year": 1851,
+      "coal": 0.222,
+      "oil": 0.0,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.222,
+      "co2_ppm": 285.92
+    },
+    {
+      "year": 1852,
+      "coal": 0.243,
+      "oil": 0.001,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.244,
+      "co2_ppm": 286.04
+    },
+    {
+      "year": 1853,
+      "coal": 0.265,
+      "oil": 0.001,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.266,
+      "co2_ppm": 286.16
+    },
+    {
+      "year": 1854,
+      "coal": 0.287,
+      "oil": 0.001,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.288,
+      "co2_ppm": 286.28
+    },
+    {
+      "year": 1855,
+      "coal": 0.308,
+      "oil": 0.002,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.31,
+      "co2_ppm": 286.4
+    },
+    {
+      "year": 1856,
+      "coal": 0.33,
+      "oil": 0.002,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.332,
+      "co2_ppm": 286.52
+    },
+    {
+      "year": 1857,
+      "coal": 0.352,
+      "oil": 0.002,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.354,
+      "co2_ppm": 286.64
+    },
+    {
+      "year": 1858,
+      "coal": 0.373,
+      "oil": 0.003,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.376,
+      "co2_ppm": 286.76
+    },
+    {
+      "year": 1859,
+      "coal": 0.395,
+      "oil": 0.003,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.398,
+      "co2_ppm": 286.88
+    },
+    {
+      "year": 1860,
+      "coal": 0.417,
+      "oil": 0.003,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.42,
+      "co2_ppm": 287.0
+    },
+    {
+      "year": 1861,
+      "coal": 0.438,
+      "oil": 0.004,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.442,
+      "co2_ppm": 287.2
+    },
+    {
+      "year": 1862,
+      "coal": 0.46,
+      "oil": 0.004,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.464,
+      "co2_ppm": 287.4
+    },
+    {
+      "year": 1863,
+      "coal": 0.482,
+      "oil": 0.004,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.486,
+      "co2_ppm": 287.6
+    },
+    {
+      "year": 1864,
+      "coal": 0.503,
+      "oil": 0.005,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.508,
+      "co2_ppm": 287.8
+    },
+    {
+      "year": 1865,
+      "coal": 0.525,
+      "oil": 0.005,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.53,
+      "co2_ppm": 288.0
+    },
+    {
+      "year": 1866,
+      "coal": 0.547,
+      "oil": 0.005,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.552,
+      "co2_ppm": 288.2
+    },
+    {
+      "year": 1867,
+      "coal": 0.568,
+      "oil": 0.006,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.574,
+      "co2_ppm": 288.4
+    },
+    {
+      "year": 1868,
+      "coal": 0.59,
+      "oil": 0.006,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.596,
+      "co2_ppm": 288.6
+    },
+    {
+      "year": 1869,
+      "coal": 0.612,
+      "oil": 0.006,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.618,
+      "co2_ppm": 288.8
+    },
+    {
+      "year": 1870,
+      "coal": 0.633,
+      "oil": 0.007,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.64,
+      "co2_ppm": 289.0
+    },
+    {
+      "year": 1871,
+      "coal": 0.655,
+      "oil": 0.007,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.662,
+      "co2_ppm": 289.18
+    },
+    {
+      "year": 1872,
+      "coal": 0.677,
+      "oil": 0.007,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.684,
+      "co2_ppm": 289.36
+    },
+    {
+      "year": 1873,
+      "coal": 0.698,
+      "oil": 0.008,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.706,
+      "co2_ppm": 289.54
+    },
+    {
+      "year": 1874,
+      "coal": 0.72,
+      "oil": 0.008,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.728,
+      "co2_ppm": 289.72
+    },
+    {
+      "year": 1875,
+      "coal": 0.742,
+      "oil": 0.008,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.75,
+      "co2_ppm": 289.9
+    },
+    {
+      "year": 1876,
+      "coal": 0.763,
+      "oil": 0.009,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.772,
+      "co2_ppm": 290.08
+    },
+    {
+      "year": 1877,
+      "coal": 0.785,
+      "oil": 0.009,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.794,
+      "co2_ppm": 290.26
+    },
+    {
+      "year": 1878,
+      "coal": 0.807,
+      "oil": 0.009,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.816,
+      "co2_ppm": 290.44
+    },
+    {
+      "year": 1879,
+      "coal": 0.828,
+      "oil": 0.01,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.838,
+      "co2_ppm": 290.62
+    },
+    {
+      "year": 1880,
+      "coal": 0.85,
+      "oil": 0.01,
+      "gas": 0.0,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.86,
+      "co2_ppm": 290.8
+    },
+    {
+      "year": 1881,
+      "coal": 0.9,
+      "oil": 0.014,
+      "gas": 0.001,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.914,
+      "co2_ppm": 291.16
+    },
+    {
+      "year": 1882,
+      "coal": 0.951,
+      "oil": 0.017,
+      "gas": 0.001,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 0.969,
+      "co2_ppm": 291.52
+    },
+    {
+      "year": 1883,
+      "coal": 1.002,
+      "oil": 0.021,
+      "gas": 0.002,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.023,
+      "co2_ppm": 291.88
+    },
+    {
+      "year": 1884,
+      "coal": 1.052,
+      "oil": 0.024,
+      "gas": 0.002,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.078,
+      "co2_ppm": 292.24
+    },
+    {
+      "year": 1885,
+      "coal": 1.103,
+      "oil": 0.028,
+      "gas": 0.003,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.132,
+      "co2_ppm": 292.6
+    },
+    {
+      "year": 1886,
+      "coal": 1.153,
+      "oil": 0.031,
+      "gas": 0.003,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.187,
+      "co2_ppm": 292.96
+    },
+    {
+      "year": 1887,
+      "coal": 1.204,
+      "oil": 0.035,
+      "gas": 0.003,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.241,
+      "co2_ppm": 293.32
+    },
+    {
+      "year": 1888,
+      "coal": 1.254,
+      "oil": 0.038,
+      "gas": 0.004,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.296,
+      "co2_ppm": 293.68
+    },
+    {
+      "year": 1889,
+      "coal": 1.304,
+      "oil": 0.042,
+      "gas": 0.005,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.35,
+      "co2_ppm": 294.04
+    },
+    {
+      "year": 1890,
+      "coal": 1.355,
+      "oil": 0.045,
+      "gas": 0.005,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.405,
+      "co2_ppm": 294.4
+    },
+    {
+      "year": 1891,
+      "coal": 1.406,
+      "oil": 0.049,
+      "gas": 0.006,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.459,
+      "co2_ppm": 294.56
+    },
+    {
+      "year": 1892,
+      "coal": 1.456,
+      "oil": 0.052,
+      "gas": 0.006,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.514,
+      "co2_ppm": 294.72
+    },
+    {
+      "year": 1893,
+      "coal": 1.507,
+      "oil": 0.056,
+      "gas": 0.007,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.568,
+      "co2_ppm": 294.88
+    },
+    {
+      "year": 1894,
+      "coal": 1.557,
+      "oil": 0.059,
+      "gas": 0.007,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.623,
+      "co2_ppm": 295.04
+    },
+    {
+      "year": 1895,
+      "coal": 1.608,
+      "oil": 0.062,
+      "gas": 0.007,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.677,
+      "co2_ppm": 295.2
+    },
+    {
+      "year": 1896,
+      "coal": 1.658,
+      "oil": 0.066,
+      "gas": 0.008,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.732,
+      "co2_ppm": 295.36
+    },
+    {
+      "year": 1897,
+      "coal": 1.709,
+      "oil": 0.07,
+      "gas": 0.009,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.786,
+      "co2_ppm": 295.52
+    },
+    {
+      "year": 1898,
+      "coal": 1.759,
+      "oil": 0.073,
+      "gas": 0.009,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.841,
+      "co2_ppm": 295.68
+    },
+    {
+      "year": 1899,
+      "coal": 1.81,
+      "oil": 0.076,
+      "gas": 0.009,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.895,
+      "co2_ppm": 295.84
+    },
+    {
+      "year": 1900,
+      "coal": 1.86,
+      "oil": 0.08,
+      "gas": 0.01,
+      "cement": 0.0,
+      "flaring": 0.0,
+      "total": 1.95,
+      "co2_ppm": 296.0
+    },
+    {
+      "year": 1901,
+      "coal": 1.923,
+      "oil": 0.098,
+      "gas": 0.013,
+      "cement": 0.001,
+      "flaring": 0.0,
+      "total": 2.034,
+      "co2_ppm": 296.41
+    },
+    {
+      "year": 1902,
+      "coal": 1.986,
+      "oil": 0.116,
+      "gas": 0.015,
+      "cement": 0.002,
+      "flaring": 0.0,
+      "total": 2.119,
+      "co2_ppm": 296.82
+    },
+    {
+      "year": 1903,
+      "coal": 2.049,
+      "oil": 0.134,
+      "gas": 0.017,
+      "cement": 0.003,
+      "flaring": 0.0,
+      "total": 2.204,
+      "co2_ppm": 297.23
+    },
+    {
+      "year": 1904,
+      "coal": 2.112,
+      "oil": 0.152,
+      "gas": 0.02,
+      "cement": 0.004,
+      "flaring": 0.0,
+      "total": 2.288,
+      "co2_ppm": 297.64
+    },
+    {
+      "year": 1905,
+      "coal": 2.175,
+      "oil": 0.17,
+      "gas": 0.022,
+      "cement": 0.005,
+      "flaring": 0.0,
+      "total": 2.373,
+      "co2_ppm": 298.05
+    },
+    {
+      "year": 1906,
+      "coal": 2.238,
+      "oil": 0.188,
+      "gas": 0.025,
+      "cement": 0.006,
+      "flaring": 0.0,
+      "total": 2.457,
+      "co2_ppm": 298.46
+    },
+    {
+      "year": 1907,
+      "coal": 2.301,
+      "oil": 0.206,
+      "gas": 0.027,
+      "cement": 0.007,
+      "flaring": 0.0,
+      "total": 2.542,
+      "co2_ppm": 298.87
+    },
+    {
+      "year": 1908,
+      "coal": 2.364,
+      "oil": 0.224,
+      "gas": 0.03,
+      "cement": 0.008,
+      "flaring": 0.0,
+      "total": 2.626,
+      "co2_ppm": 299.28
+    },
+    {
+      "year": 1909,
+      "coal": 2.427,
+      "oil": 0.242,
+      "gas": 0.033,
+      "cement": 0.009,
+      "flaring": 0.0,
+      "total": 2.711,
+      "co2_ppm": 299.69
+    },
+    {
+      "year": 1910,
+      "coal": 2.49,
+      "oil": 0.26,
+      "gas": 0.035,
+      "cement": 0.01,
+      "flaring": 0.0,
+      "total": 2.795,
+      "co2_ppm": 300.1
+    },
+    {
+      "year": 1911,
+      "coal": 2.553,
+      "oil": 0.278,
+      "gas": 0.037,
+      "cement": 0.011,
+      "flaring": 0.0,
+      "total": 2.88,
+      "co2_ppm": 300.43
+    },
+    {
+      "year": 1912,
+      "coal": 2.616,
+      "oil": 0.296,
+      "gas": 0.04,
+      "cement": 0.012,
+      "flaring": 0.0,
+      "total": 2.964,
+      "co2_ppm": 300.76
+    },
+    {
+      "year": 1913,
+      "coal": 2.679,
+      "oil": 0.314,
+      "gas": 0.043,
+      "cement": 0.013,
+      "flaring": 0.0,
+      "total": 3.049,
+      "co2_ppm": 301.09
+    },
+    {
+      "year": 1914,
+      "coal": 2.742,
+      "oil": 0.332,
+      "gas": 0.045,
+      "cement": 0.014,
+      "flaring": 0.0,
+      "total": 3.133,
+      "co2_ppm": 301.42
+    },
+    {
+      "year": 1915,
+      "coal": 2.805,
+      "oil": 0.35,
+      "gas": 0.048,
+      "cement": 0.015,
+      "flaring": 0.0,
+      "total": 3.218,
+      "co2_ppm": 301.75
+    },
+    {
+      "year": 1916,
+      "coal": 2.868,
+      "oil": 0.368,
+      "gas": 0.05,
+      "cement": 0.016,
+      "flaring": 0.0,
+      "total": 3.302,
+      "co2_ppm": 302.08
+    },
+    {
+      "year": 1917,
+      "coal": 2.931,
+      "oil": 0.386,
+      "gas": 0.052,
+      "cement": 0.017,
+      "flaring": 0.0,
+      "total": 3.386,
+      "co2_ppm": 302.41
+    },
+    {
+      "year": 1918,
+      "coal": 2.994,
+      "oil": 0.404,
+      "gas": 0.055,
+      "cement": 0.018,
+      "flaring": 0.0,
+      "total": 3.471,
+      "co2_ppm": 302.74
+    },
+    {
+      "year": 1919,
+      "coal": 3.057,
+      "oil": 0.422,
+      "gas": 0.057,
+      "cement": 0.019,
+      "flaring": 0.0,
+      "total": 3.556,
+      "co2_ppm": 303.07
+    },
+    {
+      "year": 1920,
+      "coal": 3.12,
+      "oil": 0.44,
+      "gas": 0.06,
+      "cement": 0.02,
+      "flaring": 0.0,
+      "total": 3.64,
+      "co2_ppm": 303.4
+    },
+    {
+      "year": 1921,
+      "coal": 3.151,
+      "oil": 0.473,
+      "gas": 0.068,
+      "cement": 0.021,
+      "flaring": 0.001,
+      "total": 3.714,
+      "co2_ppm": 303.76
+    },
+    {
+      "year": 1922,
+      "coal": 3.183,
+      "oil": 0.506,
+      "gas": 0.076,
+      "cement": 0.022,
+      "flaring": 0.001,
+      "total": 3.788,
+      "co2_ppm": 304.12
+    },
+    {
+      "year": 1923,
+      "coal": 3.215,
+      "oil": 0.539,
+      "gas": 0.084,
+      "cement": 0.023,
+      "flaring": 0.002,
+      "total": 3.862,
+      "co2_ppm": 304.48
+    },
+    {
+      "year": 1924,
+      "coal": 3.246,
+      "oil": 0.572,
+      "gas": 0.092,
+      "cement": 0.024,
+      "flaring": 0.002,
+      "total": 3.936,
+      "co2_ppm": 304.84
+    },
+    {
+      "year": 1925,
+      "coal": 3.277,
+      "oil": 0.605,
+      "gas": 0.1,
+      "cement": 0.025,
+      "flaring": 0.003,
+      "total": 4.01,
+      "co2_ppm": 305.2
+    },
+    {
+      "year": 1926,
+      "coal": 3.309,
+      "oil": 0.638,
+      "gas": 0.108,
+      "cement": 0.026,
+      "flaring": 0.003,
+      "total": 4.084,
+      "co2_ppm": 305.56
+    },
+    {
+      "year": 1927,
+      "coal": 3.341,
+      "oil": 0.671,
+      "gas": 0.116,
+      "cement": 0.027,
+      "flaring": 0.003,
+      "total": 4.158,
+      "co2_ppm": 305.92
+    },
+    {
+      "year": 1928,
+      "coal": 3.372,
+      "oil": 0.704,
+      "gas": 0.124,
+      "cement": 0.028,
+      "flaring": 0.004,
+      "total": 4.232,
+      "co2_ppm": 306.28
+    },
+    {
+      "year": 1929,
+      "coal": 3.404,
+      "oil": 0.737,
+      "gas": 0.132,
+      "cement": 0.029,
+      "flaring": 0.005,
+      "total": 4.306,
+      "co2_ppm": 306.64
+    },
+    {
+      "year": 1930,
+      "coal": 3.435,
+      "oil": 0.77,
+      "gas": 0.14,
+      "cement": 0.03,
+      "flaring": 0.005,
+      "total": 4.38,
+      "co2_ppm": 307.0
+    },
+    {
+      "year": 1931,
+      "coal": 3.466,
+      "oil": 0.803,
+      "gas": 0.148,
+      "cement": 0.031,
+      "flaring": 0.006,
+      "total": 4.454,
+      "co2_ppm": 307.3
+    },
+    {
+      "year": 1932,
+      "coal": 3.498,
+      "oil": 0.836,
+      "gas": 0.156,
+      "cement": 0.032,
+      "flaring": 0.006,
+      "total": 4.528,
+      "co2_ppm": 307.6
+    },
+    {
+      "year": 1933,
+      "coal": 3.53,
+      "oil": 0.869,
+      "gas": 0.164,
+      "cement": 0.033,
+      "flaring": 0.007,
+      "total": 4.602,
+      "co2_ppm": 307.9
+    },
+    {
+      "year": 1934,
+      "coal": 3.561,
+      "oil": 0.902,
+      "gas": 0.172,
+      "cement": 0.034,
+      "flaring": 0.007,
+      "total": 4.676,
+      "co2_ppm": 308.2
+    },
+    {
+      "year": 1935,
+      "coal": 3.593,
+      "oil": 0.935,
+      "gas": 0.18,
+      "cement": 0.035,
+      "flaring": 0.007,
+      "total": 4.75,
+      "co2_ppm": 308.5
+    },
+    {
+      "year": 1936,
+      "coal": 3.624,
+      "oil": 0.968,
+      "gas": 0.188,
+      "cement": 0.036,
+      "flaring": 0.008,
+      "total": 4.824,
+      "co2_ppm": 308.8
+    },
+    {
+      "year": 1937,
+      "coal": 3.655,
+      "oil": 1.001,
+      "gas": 0.196,
+      "cement": 0.037,
+      "flaring": 0.009,
+      "total": 4.898,
+      "co2_ppm": 309.1
+    },
+    {
+      "year": 1938,
+      "coal": 3.687,
+      "oil": 1.034,
+      "gas": 0.204,
+      "cement": 0.038,
+      "flaring": 0.009,
+      "total": 4.972,
+      "co2_ppm": 309.4
+    },
+    {
+      "year": 1939,
+      "coal": 3.719,
+      "oil": 1.067,
+      "gas": 0.212,
+      "cement": 0.039,
+      "flaring": 0.009,
+      "total": 5.046,
+      "co2_ppm": 309.7
+    },
+    {
+      "year": 1940,
+      "coal": 3.75,
+      "oil": 1.1,
+      "gas": 0.22,
+      "cement": 0.04,
+      "flaring": 0.01,
+      "total": 5.12,
+      "co2_ppm": 310.0
+    },
+    {
+      "year": 1941,
+      "coal": 3.777,
+      "oil": 1.123,
+      "gas": 0.251,
+      "cement": 0.043,
+      "flaring": 0.014,
+      "total": 5.208,
+      "co2_ppm": 310.13
+    },
+    {
+      "year": 1942,
+      "coal": 3.804,
+      "oil": 1.146,
+      "gas": 0.282,
+      "cement": 0.046,
+      "flaring": 0.018,
+      "total": 5.296,
+      "co2_ppm": 310.26
+    },
+    {
+      "year": 1943,
+      "coal": 3.831,
+      "oil": 1.169,
+      "gas": 0.313,
+      "cement": 0.049,
+      "flaring": 0.022,
+      "total": 5.384,
+      "co2_ppm": 310.39
+    },
+    {
+      "year": 1944,
+      "coal": 3.858,
+      "oil": 1.192,
+      "gas": 0.344,
+      "cement": 0.052,
+      "flaring": 0.026,
+      "total": 5.472,
+      "co2_ppm": 310.52
+    },
+    {
+      "year": 1945,
+      "coal": 3.885,
+      "oil": 1.215,
+      "gas": 0.375,
+      "cement": 0.055,
+      "flaring": 0.03,
+      "total": 5.56,
+      "co2_ppm": 310.65
+    },
+    {
+      "year": 1946,
+      "coal": 3.912,
+      "oil": 1.238,
+      "gas": 0.406,
+      "cement": 0.058,
+      "flaring": 0.034,
+      "total": 5.648,
+      "co2_ppm": 310.78
+    },
+    {
+      "year": 1947,
+      "coal": 3.939,
+      "oil": 1.261,
+      "gas": 0.437,
+      "cement": 0.061,
+      "flaring": 0.038,
+      "total": 5.736,
+      "co2_ppm": 310.91
+    },
+    {
+      "year": 1948,
+      "coal": 3.966,
+      "oil": 1.284,
+      "gas": 0.468,
+      "cement": 0.064,
+      "flaring": 0.042,
+      "total": 5.824,
+      "co2_ppm": 311.04
+    },
+    {
+      "year": 1949,
+      "coal": 3.993,
+      "oil": 1.307,
+      "gas": 0.499,
+      "cement": 0.067,
+      "flaring": 0.046,
+      "total": 5.912,
+      "co2_ppm": 311.17
+    },
+    {
+      "year": 1950,
+      "coal": 4.02,
+      "oil": 1.33,
+      "gas": 0.53,
+      "cement": 0.07,
+      "flaring": 0.05,
+      "total": 6.0,
+      "co2_ppm": 311.3
+    },
+    {
+      "year": 1951,
+      "coal": 4.13,
+      "oil": 1.515,
+      "gas": 0.579,
+      "cement": 0.078,
+      "flaring": 0.055,
+      "total": 6.357,
+      "co2_ppm": 311.74
+    },
+    {
+      "year": 1952,
+      "coal": 4.24,
+      "oil": 1.7,
+      "gas": 0.628,
+      "cement": 0.086,
+      "flaring": 0.06,
+      "total": 6.714,
+      "co2_ppm": 312.18
+    },
+    {
+      "year": 1953,
+      "coal": 4.35,
+      "oil": 1.885,
+      "gas": 0.677,
+      "cement": 0.094,
+      "flaring": 0.065,
+      "total": 7.071,
+      "co2_ppm": 312.62
+    },
+    {
+      "year": 1954,
+      "coal": 4.46,
+      "oil": 2.07,
+      "gas": 0.726,
+      "cement": 0.102,
+      "flaring": 0.07,
+      "total": 7.428,
+      "co2_ppm": 313.06
+    },
+    {
+      "year": 1955,
+      "coal": 4.57,
+      "oil": 2.255,
+      "gas": 0.775,
+      "cement": 0.11,
+      "flaring": 0.075,
+      "total": 7.785,
+      "co2_ppm": 313.5
+    },
+    {
+      "year": 1956,
+      "coal": 4.68,
+      "oil": 2.44,
+      "gas": 0.824,
+      "cement": 0.118,
+      "flaring": 0.08,
+      "total": 8.142,
+      "co2_ppm": 314.07
+    },
+    {
+      "year": 1957,
+      "coal": 4.79,
+      "oil": 2.625,
+      "gas": 0.873,
+      "cement": 0.126,
+      "flaring": 0.085,
+      "total": 8.499,
+      "co2_ppm": 314.63
+    },
+    {
+      "year": 1958,
+      "coal": 4.9,
+      "oil": 2.81,
+      "gas": 0.922,
+      "cement": 0.134,
+      "flaring": 0.09,
+      "total": 8.856,
+      "co2_ppm": 315.2
+    },
+    {
+      "year": 1959,
+      "coal": 5.01,
+      "oil": 2.995,
+      "gas": 0.971,
+      "cement": 0.142,
+      "flaring": 0.095,
+      "total": 9.213,
+      "co2_ppm": 316.05
+    },
+    {
+      "year": 1960,
+      "coal": 5.12,
+      "oil": 3.18,
+      "gas": 1.02,
+      "cement": 0.15,
+      "flaring": 0.1,
+      "total": 9.57,
+      "co2_ppm": 316.9
+    },
+    {
+      "year": 1961,
+      "coal": 5.213,
+      "oil": 3.517,
+      "gas": 1.123,
+      "cement": 0.163,
+      "flaring": 0.11,
+      "total": 10.126,
+      "co2_ppm": 317.52
+    },
+    {
+      "year": 1962,
+      "coal": 5.306,
+      "oil": 3.854,
+      "gas": 1.226,
+      "cement": 0.176,
+      "flaring": 0.12,
+      "total": 10.682,
+      "co2_ppm": 318.14
+    },
+    {
+      "year": 1963,
+      "coal": 5.399,
+      "oil": 4.191,
+      "gas": 1.329,
+      "cement": 0.189,
+      "flaring": 0.13,
+      "total": 11.238,
+      "co2_ppm": 318.76
+    },
+    {
+      "year": 1964,
+      "coal": 5.492,
+      "oil": 4.528,
+      "gas": 1.432,
+      "cement": 0.202,
+      "flaring": 0.14,
+      "total": 11.794,
+      "co2_ppm": 319.38
+    },
+    {
+      "year": 1965,
+      "coal": 5.585,
+      "oil": 4.865,
+      "gas": 1.535,
+      "cement": 0.215,
+      "flaring": 0.15,
+      "total": 12.35,
+      "co2_ppm": 320.0
+    },
+    {
+      "year": 1966,
+      "coal": 5.678,
+      "oil": 5.202,
+      "gas": 1.638,
+      "cement": 0.228,
+      "flaring": 0.16,
+      "total": 12.906,
+      "co2_ppm": 321.14
+    },
+    {
+      "year": 1967,
+      "coal": 5.771,
+      "oil": 5.539,
+      "gas": 1.741,
+      "cement": 0.241,
+      "flaring": 0.17,
+      "total": 13.462,
+      "co2_ppm": 322.28
+    },
+    {
+      "year": 1968,
+      "coal": 5.864,
+      "oil": 5.876,
+      "gas": 1.844,
+      "cement": 0.254,
+      "flaring": 0.18,
+      "total": 14.018,
+      "co2_ppm": 323.42
+    },
+    {
+      "year": 1969,
+      "coal": 5.957,
+      "oil": 6.213,
+      "gas": 1.947,
+      "cement": 0.267,
+      "flaring": 0.19,
+      "total": 14.574,
+      "co2_ppm": 324.56
+    },
+    {
+      "year": 1970,
+      "coal": 6.05,
+      "oil": 6.55,
+      "gas": 2.05,
+      "cement": 0.28,
+      "flaring": 0.2,
+      "total": 15.13,
+      "co2_ppm": 325.7
+    },
+    {
+      "year": 1971,
+      "coal": 6.227,
+      "oil": 6.837,
+      "gas": 2.177,
+      "cement": 0.296,
+      "flaring": 0.208,
+      "total": 15.745,
+      "co2_ppm": 326.78
+    },
+    {
+      "year": 1972,
+      "coal": 6.404,
+      "oil": 7.124,
+      "gas": 2.304,
+      "cement": 0.312,
+      "flaring": 0.216,
+      "total": 16.36,
+      "co2_ppm": 327.86
+    },
+    {
+      "year": 1973,
+      "coal": 6.581,
+      "oil": 7.411,
+      "gas": 2.431,
+      "cement": 0.328,
+      "flaring": 0.224,
+      "total": 16.975,
+      "co2_ppm": 328.94
+    },
+    {
+      "year": 1974,
+      "coal": 6.758,
+      "oil": 7.698,
+      "gas": 2.558,
+      "cement": 0.344,
+      "flaring": 0.232,
+      "total": 17.59,
+      "co2_ppm": 330.02
+    },
+    {
+      "year": 1975,
+      "coal": 6.935,
+      "oil": 7.985,
+      "gas": 2.685,
+      "cement": 0.36,
+      "flaring": 0.24,
+      "total": 18.205,
+      "co2_ppm": 331.1
+    },
+    {
+      "year": 1976,
+      "coal": 7.112,
+      "oil": 8.272,
+      "gas": 2.812,
+      "cement": 0.376,
+      "flaring": 0.248,
+      "total": 18.82,
+      "co2_ppm": 332.64
+    },
+    {
+      "year": 1977,
+      "coal": 7.289,
+      "oil": 8.559,
+      "gas": 2.939,
+      "cement": 0.392,
+      "flaring": 0.256,
+      "total": 19.435,
+      "co2_ppm": 334.18
+    },
+    {
+      "year": 1978,
+      "coal": 7.466,
+      "oil": 8.846,
+      "gas": 3.066,
+      "cement": 0.408,
+      "flaring": 0.264,
+      "total": 20.05,
+      "co2_ppm": 335.72
+    },
+    {
+      "year": 1979,
+      "coal": 7.643,
+      "oil": 9.133,
+      "gas": 3.193,
+      "cement": 0.424,
+      "flaring": 0.272,
+      "total": 20.665,
+      "co2_ppm": 337.26
+    },
+    {
+      "year": 1980,
+      "coal": 7.82,
+      "oil": 9.42,
+      "gas": 3.32,
+      "cement": 0.44,
+      "flaring": 0.28,
+      "total": 21.28,
+      "co2_ppm": 338.8
+    },
+    {
+      "year": 1981,
+      "coal": 7.943,
+      "oil": 9.463,
+      "gas": 3.426,
+      "cement": 0.454,
+      "flaring": 0.282,
+      "total": 21.568,
+      "co2_ppm": 340.26
+    },
+    {
+      "year": 1982,
+      "coal": 8.066,
+      "oil": 9.506,
+      "gas": 3.532,
+      "cement": 0.468,
+      "flaring": 0.284,
+      "total": 21.856,
+      "co2_ppm": 341.72
+    },
+    {
+      "year": 1983,
+      "coal": 8.189,
+      "oil": 9.549,
+      "gas": 3.638,
+      "cement": 0.482,
+      "flaring": 0.286,
+      "total": 22.144,
+      "co2_ppm": 343.18
+    },
+    {
+      "year": 1984,
+      "coal": 8.312,
+      "oil": 9.592,
+      "gas": 3.744,
+      "cement": 0.496,
+      "flaring": 0.288,
+      "total": 22.432,
+      "co2_ppm": 344.64
+    },
+    {
+      "year": 1985,
+      "coal": 8.435,
+      "oil": 9.635,
+      "gas": 3.85,
+      "cement": 0.51,
+      "flaring": 0.29,
+      "total": 22.72,
+      "co2_ppm": 346.1
+    },
+    {
+      "year": 1986,
+      "coal": 8.558,
+      "oil": 9.678,
+      "gas": 3.956,
+      "cement": 0.524,
+      "flaring": 0.292,
+      "total": 23.008,
+      "co2_ppm": 347.76
+    },
+    {
+      "year": 1987,
+      "coal": 8.681,
+      "oil": 9.721,
+      "gas": 4.062,
+      "cement": 0.538,
+      "flaring": 0.294,
+      "total": 23.296,
+      "co2_ppm": 349.42
+    },
+    {
+      "year": 1988,
+      "coal": 8.804,
+      "oil": 9.764,
+      "gas": 4.168,
+      "cement": 0.552,
+      "flaring": 0.296,
+      "total": 23.584,
+      "co2_ppm": 351.08
+    },
+    {
+      "year": 1989,
+      "coal": 8.927,
+      "oil": 9.807,
+      "gas": 4.274,
+      "cement": 0.566,
+      "flaring": 0.298,
+      "total": 23.872,
+      "co2_ppm": 352.74
+    },
+    {
+      "year": 1990,
+      "coal": 9.05,
+      "oil": 9.85,
+      "gas": 4.38,
+      "cement": 0.58,
+      "flaring": 0.3,
+      "total": 24.16,
+      "co2_ppm": 354.4
+    },
+    {
+      "year": 1991,
+      "coal": 9.144,
+      "oil": 9.964,
+      "gas": 4.48,
+      "cement": 0.608,
+      "flaring": 0.304,
+      "total": 24.5,
+      "co2_ppm": 355.68
+    },
+    {
+      "year": 1992,
+      "coal": 9.238,
+      "oil": 10.078,
+      "gas": 4.58,
+      "cement": 0.636,
+      "flaring": 0.308,
+      "total": 24.84,
+      "co2_ppm": 356.96
+    },
+    {
+      "year": 1993,
+      "coal": 9.332,
+      "oil": 10.192,
+      "gas": 4.68,
+      "cement": 0.664,
+      "flaring": 0.312,
+      "total": 25.18,
+      "co2_ppm": 358.24
+    },
+    {
+      "year": 1994,
+      "coal": 9.426,
+      "oil": 10.306,
+      "gas": 4.78,
+      "cement": 0.692,
+      "flaring": 0.316,
+      "total": 25.52,
+      "co2_ppm": 359.52
+    },
+    {
+      "year": 1995,
+      "coal": 9.52,
+      "oil": 10.42,
+      "gas": 4.88,
+      "cement": 0.72,
+      "flaring": 0.32,
+      "total": 25.86,
+      "co2_ppm": 360.8
+    },
+    {
+      "year": 1996,
+      "coal": 9.646,
+      "oil": 10.58,
+      "gas": 5.0,
+      "cement": 0.746,
+      "flaring": 0.326,
+      "total": 26.298,
+      "co2_ppm": 362.54
+    },
+    {
+      "year": 1997,
+      "coal": 9.772,
+      "oil": 10.74,
+      "gas": 5.12,
+      "cement": 0.772,
+      "flaring": 0.332,
+      "total": 26.736,
+      "co2_ppm": 364.28
+    },
+    {
+      "year": 1998,
+      "coal": 9.898,
+      "oil": 10.9,
+      "gas": 5.24,
+      "cement": 0.798,
+      "flaring": 0.338,
+      "total": 27.174,
+      "co2_ppm": 366.02
+    },
+    {
+      "year": 1999,
+      "coal": 10.024,
+      "oil": 11.06,
+      "gas": 5.36,
+      "cement": 0.824,
+      "flaring": 0.344,
+      "total": 27.612,
+      "co2_ppm": 367.76
+    },
+    {
+      "year": 2000,
+      "coal": 10.15,
+      "oil": 11.22,
+      "gas": 5.48,
+      "cement": 0.85,
+      "flaring": 0.35,
+      "total": 28.05,
+      "co2_ppm": 369.5
+    },
+    {
+      "year": 2001,
+      "coal": 10.59,
+      "oil": 11.386,
+      "gas": 5.628,
+      "cement": 0.91,
+      "flaring": 0.356,
+      "total": 28.87,
+      "co2_ppm": 371.56
+    },
+    {
+      "year": 2002,
+      "coal": 11.03,
+      "oil": 11.552,
+      "gas": 5.776,
+      "cement": 0.97,
+      "flaring": 0.362,
+      "total": 29.69,
+      "co2_ppm": 373.62
+    },
+    {
+      "year": 2003,
+      "coal": 11.47,
+      "oil": 11.718,
+      "gas": 5.924,
+      "cement": 1.03,
+      "flaring": 0.368,
+      "total": 30.51,
+      "co2_ppm": 375.68
+    },
+    {
+      "year": 2004,
+      "coal": 11.91,
+      "oil": 11.884,
+      "gas": 6.072,
+      "cement": 1.09,
+      "flaring": 0.374,
+      "total": 31.33,
+      "co2_ppm": 377.74
+    },
+    {
+      "year": 2005,
+      "coal": 12.35,
+      "oil": 12.05,
+      "gas": 6.22,
+      "cement": 1.15,
+      "flaring": 0.38,
+      "total": 32.15,
+      "co2_ppm": 379.8
+    },
+    {
+      "year": 2006,
+      "coal": 12.704,
+      "oil": 12.096,
+      "gas": 6.366,
+      "cement": 1.196,
+      "flaring": 0.384,
+      "total": 32.746,
+      "co2_ppm": 381.82
+    },
+    {
+      "year": 2007,
+      "coal": 13.058,
+      "oil": 12.142,
+      "gas": 6.512,
+      "cement": 1.242,
+      "flaring": 0.388,
+      "total": 33.342,
+      "co2_ppm": 383.84
+    },
+    {
+      "year": 2008,
+      "coal": 13.412,
+      "oil": 12.188,
+      "gas": 6.658,
+      "cement": 1.288,
+      "flaring": 0.392,
+      "total": 33.938,
+      "co2_ppm": 385.86
+    },
+    {
+      "year": 2009,
+      "coal": 13.766,
+      "oil": 12.234,
+      "gas": 6.804,
+      "cement": 1.334,
+      "flaring": 0.396,
+      "total": 34.534,
+      "co2_ppm": 387.88
+    },
+    {
+      "year": 2010,
+      "coal": 14.12,
+      "oil": 12.28,
+      "gas": 6.95,
+      "cement": 1.38,
+      "flaring": 0.4,
+      "total": 35.13,
+      "co2_ppm": 389.9
+    },
+    {
+      "year": 2011,
+      "coal": 14.252,
+      "oil": 12.354,
+      "gas": 7.044,
+      "cement": 1.394,
+      "flaring": 0.404,
+      "total": 35.448,
+      "co2_ppm": 392.08
+    },
+    {
+      "year": 2012,
+      "coal": 14.384,
+      "oil": 12.428,
+      "gas": 7.138,
+      "cement": 1.408,
+      "flaring": 0.408,
+      "total": 35.766,
+      "co2_ppm": 394.26
+    },
+    {
+      "year": 2013,
+      "coal": 14.516,
+      "oil": 12.502,
+      "gas": 7.232,
+      "cement": 1.422,
+      "flaring": 0.412,
+      "total": 36.084,
+      "co2_ppm": 396.44
+    },
+    {
+      "year": 2014,
+      "coal": 14.648,
+      "oil": 12.576,
+      "gas": 7.326,
+      "cement": 1.436,
+      "flaring": 0.416,
+      "total": 36.402,
+      "co2_ppm": 398.62
+    },
+    {
+      "year": 2015,
+      "coal": 14.78,
+      "oil": 12.65,
+      "gas": 7.42,
+      "cement": 1.45,
+      "flaring": 0.42,
+      "total": 36.72,
+      "co2_ppm": 400.8
+    },
+    {
+      "year": 2016,
+      "coal": 14.893,
+      "oil": 12.75,
+      "gas": 7.563,
+      "cement": 1.473,
+      "flaring": 0.427,
+      "total": 37.107,
+      "co2_ppm": 403.37
+    },
+    {
+      "year": 2017,
+      "coal": 15.007,
+      "oil": 12.85,
+      "gas": 7.707,
+      "cement": 1.497,
+      "flaring": 0.433,
+      "total": 37.493,
+      "co2_ppm": 405.93
+    },
+    {
+      "year": 2018,
+      "coal": 15.12,
+      "oil": 12.95,
+      "gas": 7.85,
+      "cement": 1.52,
+      "flaring": 0.44,
+      "total": 37.88,
+      "co2_ppm": 408.5
+    },
+    {
+      "year": 2019,
+      "coal": 15.18,
+      "oil": 13.02,
+      "gas": 8.02,
+      "cement": 1.55,
+      "flaring": 0.43,
+      "total": 38.2,
+      "co2_ppm": 411.35
+    },
+    {
+      "year": 2020,
+      "coal": 14.65,
+      "oil": 11.85,
+      "gas": 7.88,
+      "cement": 1.58,
+      "flaring": 0.41,
+      "total": 36.37,
+      "co2_ppm": 414.2
+    },
+    {
+      "year": 2021,
+      "coal": 15.22,
+      "oil": 12.45,
+      "gas": 8.22,
+      "cement": 1.62,
+      "flaring": 0.42,
+      "total": 37.93,
+      "co2_ppm": 416.5
+    },
+    {
+      "year": 2022,
+      "coal": 15.45,
+      "oil": 12.68,
+      "gas": 8.18,
+      "cement": 1.61,
+      "flaring": 0.43,
+      "total": 38.35,
+      "co2_ppm": 418.6
+    },
+    {
+      "year": 2023,
+      "coal": 15.62,
+      "oil": 12.8,
+      "gas": 8.25,
+      "cement": 1.63,
+      "flaring": 0.44,
+      "total": 38.74,
+      "co2_ppm": 421.1
+    },
+    {
+      "year": 2024,
+      "coal": 15.75,
+      "oil": 12.9,
+      "gas": 8.32,
+      "cement": 1.65,
+      "flaring": 0.45,
+      "total": 39.07,
+      "co2_ppm": 425.2
+    }
+  ],
+  "countries_emissions": [
+    {
+      "country": "China",
+      "code": "CHN",
+      "annual_mt": 12600,
+      "per_capita_t": 8.9,
+      "share_global_pct": 32.2,
+      "cumulative_gt": 285.0,
+      "trend_5yr": "+4.2%",
+      "primary_source": "Coal (70%)"
+    },
+    {
+      "country": "United States",
+      "code": "USA",
+      "annual_mt": 4850,
+      "per_capita_t": 14.4,
+      "share_global_pct": 12.4,
+      "cumulative_gt": 522.0,
+      "trend_5yr": "-2.8%",
+      "primary_source": "Oil & Gas (78%)"
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "annual_mt": 2950,
+      "per_capita_t": 2.1,
+      "share_global_pct": 7.5,
+      "cumulative_gt": 68.0,
+      "trend_5yr": "+7.1%",
+      "primary_source": "Coal (66%)"
+    },
+    {
+      "country": "European Union (27)",
+      "code": "EU27",
+      "annual_mt": 2650,
+      "per_capita_t": 5.9,
+      "share_global_pct": 6.8,
+      "cumulative_gt": 365.0,
+      "trend_5yr": "-6.5%",
+      "primary_source": "Oil & Gas (62%)"
+    },
+    {
+      "country": "Russia",
+      "code": "RUS",
+      "annual_mt": 1950,
+      "per_capita_t": 13.5,
+      "share_global_pct": 5.0,
+      "cumulative_gt": 125.0,
+      "trend_5yr": "+1.1%",
+      "primary_source": "Gas & Oil (76%)"
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "annual_mt": 1020,
+      "per_capita_t": 8.2,
+      "share_global_pct": 2.6,
+      "cumulative_gt": 72.0,
+      "trend_5yr": "-3.8%",
+      "primary_source": "Coal & Gas (68%)"
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "annual_mt": 780,
+      "per_capita_t": 2.8,
+      "share_global_pct": 2.0,
+      "cumulative_gt": 22.0,
+      "trend_5yr": "+6.8%",
+      "primary_source": "Coal & Land Use"
+    },
+    {
+      "country": "Iran",
+      "code": "IRN",
+      "annual_mt": 740,
+      "per_capita_t": 8.4,
+      "share_global_pct": 1.9,
+      "cumulative_gt": 25.0,
+      "trend_5yr": "+2.5%",
+      "primary_source": "Gas & Oil (92%)"
+    },
+    {
+      "country": "Saudi Arabia",
+      "code": "SAU",
+      "annual_mt": 680,
+      "per_capita_t": 18.7,
+      "share_global_pct": 1.7,
+      "cumulative_gt": 19.5,
+      "trend_5yr": "+2.2%",
+      "primary_source": "Oil & Gas (98%)"
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "annual_mt": 640,
+      "per_capita_t": 7.6,
+      "share_global_pct": 1.6,
+      "cumulative_gt": 94.0,
+      "trend_5yr": "-8.1%",
+      "primary_source": "Coal & Gas"
+    },
+    {
+      "country": "South Korea",
+      "code": "KOR",
+      "annual_mt": 610,
+      "per_capita_t": 11.8,
+      "share_global_pct": 1.6,
+      "cumulative_gt": 23.0,
+      "trend_5yr": "-3.1%",
+      "primary_source": "Coal & Oil"
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "annual_mt": 550,
+      "per_capita_t": 14.1,
+      "share_global_pct": 1.4,
+      "cumulative_gt": 36.0,
+      "trend_5yr": "-1.5%",
+      "primary_source": "Oil & Gas (72%)"
+    },
+    {
+      "country": "Brazil",
+      "code": "BRA",
+      "annual_mt": 490,
+      "per_capita_t": 2.3,
+      "share_global_pct": 1.3,
+      "cumulative_gt": 18.0,
+      "trend_5yr": "-1.0%",
+      "primary_source": "Oil & Transport"
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "annual_mt": 330,
+      "per_capita_t": 4.9,
+      "share_global_pct": 0.8,
+      "cumulative_gt": 80.0,
+      "trend_5yr": "-7.4%",
+      "primary_source": "Gas & Oil"
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "annual_mt": 370,
+      "per_capita_t": 14.2,
+      "share_global_pct": 0.9,
+      "cumulative_gt": 21.0,
+      "trend_5yr": "-3.9%",
+      "primary_source": "Coal & Gas"
+    }
+  ],
+  "ghg_composition": {
+    "by_gas": [
+      {
+        "gas": "Carbon Dioxide (CO\u2082)",
+        "formula": "CO2",
+        "share_pct": 74.4,
+        "lifetime_years": "300 - 1,000 years",
+        "gwp_100": 1,
+        "primary_sources": "Fossil fuel combustion (coal, oil, gas), industrial processes, deforestation"
+      },
+      {
+        "gas": "Methane (CH\u2084)",
+        "formula": "CH4",
+        "share_pct": 17.3,
+        "lifetime_years": "12 years",
+        "gwp_100": 28,
+        "primary_sources": "Livestock enteric fermentation, rice cultivation, fossil fuel extraction/leaks, landfills"
+      },
+      {
+        "gas": "Nitrous Oxide (N\u2082O)",
+        "formula": "N2O",
+        "share_pct": 6.2,
+        "lifetime_years": "114 years",
+        "gwp_100": 273,
+        "primary_sources": "Synthetic nitrogen fertilizers, agricultural soils, manure management, chemical industry"
+      },
+      {
+        "gas": "Fluorinated Gases (F-gases)",
+        "formula": "HFCs, PFCs, SF6, NF3",
+        "share_pct": 2.1,
+        "lifetime_years": "Up to 50,000 years",
+        "gwp_100": "1,000 - 24,000",
+        "primary_sources": "Refrigerants, air conditioning, semiconductor manufacturing, electrical insulation"
+      }
+    ],
+    "by_sector": [
+      {
+        "sector": "Energy (Electricity & Heat)",
+        "share_pct": 34.0,
+        "subsectors": [
+          "Coal power",
+          "Gas turbines",
+          "District heating"
+        ]
+      },
+      {
+        "sector": "Industry & Manufacturing",
+        "share_pct": 24.2,
+        "subsectors": [
+          "Steel & iron",
+          "Cement production",
+          "Chemicals",
+          "Textiles"
+        ]
+      },
+      {
+        "sector": "Agriculture, Forestry & Land Use",
+        "share_pct": 21.0,
+        "subsectors": [
+          "Livestock",
+          "Deforestation",
+          "Fertilizers",
+          "Rice paddies"
+        ]
+      },
+      {
+        "sector": "Transportation",
+        "share_pct": 15.0,
+        "subsectors": [
+          "Road passenger/freight",
+          "Aviation",
+          "Shipping",
+          "Rail"
+        ]
+      },
+      {
+        "sector": "Buildings & Residential",
+        "share_pct": 5.8,
+        "subsectors": [
+          "Space heating",
+          "Cooking",
+          "Water heating"
+        ]
+      }
+    ]
+  },
+  "non_co2_ghg_timeline": [
+    {
+      "year": 1850,
+      "ch4_ppb": 790,
+      "n2o_ppb": 273
+    },
+    {
+      "year": 1900,
+      "ch4_ppb": 860,
+      "n2o_ppb": 279
+    },
+    {
+      "year": 1950,
+      "ch4_ppb": 1140,
+      "n2o_ppb": 288
+    },
+    {
+      "year": 1970,
+      "ch4_ppb": 1380,
+      "n2o_ppb": 296
+    },
+    {
+      "year": 1980,
+      "ch4_ppb": 1570,
+      "n2o_ppb": 301
+    },
+    {
+      "year": 1990,
+      "ch4_ppb": 1715,
+      "n2o_ppb": 308
+    },
+    {
+      "year": 2000,
+      "ch4_ppb": 1773,
+      "n2o_ppb": 316
+    },
+    {
+      "year": 2010,
+      "ch4_ppb": 1803,
+      "n2o_ppb": 323
+    },
+    {
+      "year": 2015,
+      "ch4_ppb": 1834,
+      "n2o_ppb": 328
+    },
+    {
+      "year": 2020,
+      "ch4_ppb": 1879,
+      "n2o_ppb": 333
+    },
+    {
+      "year": 2023,
+      "ch4_ppb": 1922,
+      "n2o_ppb": 336
+    },
+    {
+      "year": 2024,
+      "ch4_ppb": 1934,
+      "n2o_ppb": 337
+    }
+  ]
+}
